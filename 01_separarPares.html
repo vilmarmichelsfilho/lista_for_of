@@ -7,10 +7,21 @@
 
     //ENTRADA
 
+    let listaDeNumeros = [1, 4, 6, 8, 898, 7, 43, 2980, 10];
+    let pares = [];
     
     //PROCESSAMENTO
 
+    for (let numero of listaDeNumeros) {
+        if (numero % 2 == 0 ) {
+            pares.push(numero);
+        }
+    }
+
+    pares.sort((a, b) => a - b);
 
     //SAÍDA
+
+    document.write(pares.join(' - '));
 
 </script>
